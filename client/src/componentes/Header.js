@@ -31,7 +31,13 @@ const Header = () => {
                     </h3>
                 </div>
                 <div>
-                    <h3>Login</h3>
+                    <h3>
+                        <Link 
+                            to="/login"
+                        >
+                            Login
+                        </Link>
+                    </h3>
                     <DarkMode/>
                 </div>
             </header>
