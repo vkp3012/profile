@@ -58,6 +58,28 @@ header>div>h3{
   text-transform: uppercase;
 }
 
+.logo-1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2px;
+}
+
+.logo>span{
+  border: 10px solid red;
+  border-radius: 50%;
+  margin: 0 1px;
+}
+
+.logo>span~span{
+  border: 7px solid rgb(55, 0, 255);
+}
+
+.logo1>span{
+  border: 5px solid rgb(57, 211, 52);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
 /* header part is done */
 
 /* theme part start here.. */
@@ -154,10 +176,10 @@ header>div>h3{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 25rem;
+  margin: 3rem 35rem;
   padding:30px;
   border-radius: 25px;
-  height: 300px;
+  height: 420px;
   border: 2px solid black;
   width: 40%;
   box-shadow:3px 3px 2px 2px #888888;
@@ -165,33 +187,38 @@ header>div>h3{
 
 input[type="text"]{
   background-color: transparent;
-  margin: 5px 100px;
+  margin: 25px 100px;
   padding: 10px;
   width: 100%;
   outline: none;
   border: none;
   border-bottom: 1px solid red;
-  /* color: #131921; */
+  font-size: 20px;
+  fill: none;
 }
 
 input[type="password"]{
   background-color: transparent;
-  margin: 5px 100px;
+  fill: none;
+  margin: 25px 100px;
   padding: 10px;
   width: 100%;
   outline: none;
   border: none;
   border-bottom: 1px solid red;
+  font-size: 20px;
 }
 
 input[type="email"]{
   background-color: transparent;
-  margin: 5px 100px;
+  margin: 25px 100px;
   padding: 10px;
   width: 100%;
   outline: none;
   border: none;
   border-bottom: 1px solid red;
+  font-size: 20px;
+  fill: none;
 }
 
 /* login part end here  */
@@ -203,10 +230,10 @@ input[type="email"]{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 25rem;
+  margin: 20px 35rem;
   padding:30px;
   border-radius: 25px;
-  height: 400px;
+  height: 640px;
   border: 2px solid black;
   width: 40%;
   box-shadow:10px 10px 8px 10px #888888;
@@ -220,11 +247,11 @@ input[type="email"]{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 25rem;
-  padding:30px;
+  margin: 3rem 35rem;
+  padding:22px 35px;
   border-radius: 25px;
-  height: 175px;
+  height: 250px;
   border: 2px solid black;
   width: 40%;
-  box-shadow:5px 10px inherit;
+  box-shadow:10px 10px 8px 10px #888888;
 }

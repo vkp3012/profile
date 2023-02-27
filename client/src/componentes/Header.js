@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import DarkMode from './DarkMode';
+import Logo from './Logo';
 
 const Header = () => {
     return (
         <>
             <header className='header'>
-                <div>VKP</div>
+                <Logo/>
                 <div>
                     <h3>
                         <Link 

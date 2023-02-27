@@ -1,12 +1,13 @@
 import React from 'react'
 import Meta from './Meta'
+import Logo from './Logo'
 
 const Signin = () => {
     return (
         <>
         <Meta title = {"Sign In"} />
         <form class='signin-form'>
-            <h2>VKP</h2>
+            <Logo/>
             <input type="text" placeholder='Name'/>
             <input type="text" placeholder='UserName'/>
             <input type="email" placeholder='Email'/>

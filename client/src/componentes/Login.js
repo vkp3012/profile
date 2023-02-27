@@ -1,7 +1,7 @@
 import React from 'react'
 import Meta from './Meta'
 import { Link } from "react-router-dom"
-
+import Logo from './Logo'
 const Login = () => {
 
 
@@ -9,7 +9,7 @@ const Login = () => {
         <>
             <Meta title = {"Login"} />
             <form class='login-form'>
-                <h2>VKP</h2>
+                <Logo/>
                 <input type="text" placeholder='UserName or Email'/>
                 <input type="password" placeholder='Password'/>
                 <div>

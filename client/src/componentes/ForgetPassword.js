@@ -1,12 +1,14 @@
 import React from 'react'
 import Meta from './Meta'
-
+import Logo from './Logo'
 const ForgetPassword = () => {
   return (
     <>
     <Meta title = {"Forget Password"} />
     <form class='forgetPassword-form'>
-        <h2>VKP</h2>
+      <div>
+        <Logo/>
+      </div>
         <input type="email" placeholder='Email'/>
         <div>
             <button className='button'>Send Mail</button>
