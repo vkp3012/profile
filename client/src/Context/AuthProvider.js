@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 export const AuthContext = React.createContext();
 
 export function useAuth() {
-    return useContext();
+    return useContext(AuthContext);
 }
 
 function AuthProvider({ children }){

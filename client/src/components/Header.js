@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
-// import AuthProvider,{ useAuth } from '../Context/AuthProvider';
+import AuthProvider,{ useAuth } from '../Context/AuthProvider';
 import DarkMode from './DarkMode';
 import Logo from './Logo';
 
 const Header = () => {
     // console.log(localStorage.getItem("user"));
-    // const { user, logout } = useAuth()
+    const { user, logout } = useAuth()
  
     useEffect(() => {
         let navBar = document.querySelector("header");
@@ -50,7 +50,7 @@ const Header = () => {
                 </div>
                 <div>
                     <h3>
-                    {/* { user ?
+                    { user ?
                         <>
                             {console.log(user)}
                                 <li>
@@ -62,8 +62,7 @@ const Header = () => {
                         </>
                         :                        
                         <Link to="/login">Login</Link>
-                    } */}
-                     <Link to="/login">Login</Link>
+                    }
                     </h3>
                     <DarkMode/>
                 </div>
