@@ -1,27 +1,32 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import {BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css';
-import Layout from './componentes/Layout';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Contect';
-import Login from './componentes/Login';
-import Signin from './componentes/Signin';
-import ForgetPassword from './componentes/ForgetPassword';
+import Contact from './pages/Contact';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import ForgetPassword from './components/ForgetPassword';
+import AuthProvider from './Context/AuthProvider';
+
 function App() {
+
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path = "/" element= {<Layout/>}>
-            <Route index element = {<Home/>}/>
-            <Route path= "/about" element = {<About/>}/>
-            <Route path= "/contact" element = {<Contact/>}/>
-            <Route path= "/login" element = {<Login/>}/>
-            <Route path= "/signin" element = {<Signin/>}/>
-            <Route path= "/forgetPassword" element = {<ForgetPassword/>}/>
-          </Route>
-        </Routes>
+        <AuthProvider>
+          <Routes>
+              <Route path = "/" element= {<Layout/>}>
+                <Route index element = {<Home/>}/>
+                <Route path= "/about" element = {<About/>}/>
+                <Route path= "/contact" element = {<Contact/>}/>
+                <Route path= "/login" element = {<Login/>}/>
+                <Route path= "/signup" element = {<Signup/>}/>
+                <Route path= "/forgetPassword" element = {<ForgetPassword/>}/>
+              </Route>
+          </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </>
     

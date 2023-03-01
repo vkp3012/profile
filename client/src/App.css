@@ -225,7 +225,7 @@ input[type="email"]{
 
 /* sign in from */
 
-.signin-form{
+.signup-form{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +241,7 @@ input[type="email"]{
 
 /* sign in page end here */
 
-/* fogget password */
+/* forget password */
 .forgetPassword-form{
   display: flex;
   align-items: center;
